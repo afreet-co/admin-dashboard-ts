@@ -2,6 +2,6 @@ module.exports = {
   poweredByHeader: false,
   trailingSlash: false,
   reactStrictMode: true,
-  basePath: "/admin-dashboard-ts",
-  assetPrefix: "/admin-dashboard-ts",
+  basePath: process.env.NEXT_PUBLIC_SITE_PREFIX,
+  assetPrefix: process.env.NEXT_PUBLIC_SITE_PREFIX,
 };
