@@ -1,0 +1,31 @@
+{
+  "name": "admin-dashboard-ts",
+  "description": "A simple next.js tailwindcss boilerplate containing a simple authentication and dashboard template",
+  "author": {
+    "name": "Afreet Co"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^11.0.1",
+    "@types/node": "^15.12.5",
+    "@types/react": "^17.0.11",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "typescript": "^4.3.4"
+  },
+  "license": "MIT"
+}
