@@ -10,7 +10,7 @@ interface ButtonProps {
   rounded?: boolean;
   outline?: boolean;
   classNames?: string;
-  onClick:()=>void;
+  onClick?:()=>void;
 }
 
 export const Button: FC<ButtonProps> = ({
