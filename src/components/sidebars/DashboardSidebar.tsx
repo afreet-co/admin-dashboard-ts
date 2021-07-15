@@ -23,7 +23,7 @@ export const DashboardSidebar = () => {
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
-            className={`cursor-pointer text-light-400 dark:text-dark-600 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent opacity-50 md:hidden `}
+            className={`cursor-pointer  px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent opacity-50 md:hidden `}
             type="button"
             onClick={() =>
               setCollapseShow(` bg-light-200 dark:bg-dark-300  m-2 py-3 px-6`)
@@ -77,6 +77,21 @@ export const DashboardSidebar = () => {
                 </div>
               </div>
             </div>
+
+            {/* Form */}
+            <form className="mt-6 mb-4 md:hidden">
+              <div className="relative flex w-full flex-wrap items-stretch">
+                <span className="z-10 h-full leading-snug font-normal text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 py-2">
+                  <i className="fas fa-search"></i>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Search here..."
+                  className="border-0 px-3 py-2 placeholder-dark-400 dark:placeholder-light-300 relative bg-light-300 dark:bg-dark-500  rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-8"
+                />
+              </div>
+            </form>
+
             {sidebarRoutes.map(({ id, items, title }) => (
               <Fragment key={id}>
                 <MenuDivider />
