@@ -11,7 +11,7 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
     <>
       <footer
         className={`sticky ${
-          isAuthLayout ? "" : `bg-light-400 dark:bg-dark-800`
+          isAuthLayout ? "" : `bg-light-400 dark:bg-dark-600`
         } bottom-0 block py-2`}
       >
         <div className="container mx-auto">
@@ -23,7 +23,7 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
                 Copyright © {new Date().getFullYear()}
                 <a
                   href="#"
-                  className={`text-dark-700 dark:text-light-400 hover:text-dark-600 dark:hover:text-light-500 text-sm font-semibold p-1`}
+                  className={`text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500 text-sm font-semibold p-1`}
                 >
                   {company_name}
                 </a>

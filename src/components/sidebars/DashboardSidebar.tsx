@@ -18,15 +18,15 @@ export const DashboardSidebar = () => {
   return (
     <>
       <nav
-        className={`md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-light-400 dark:bg-dark-800 flex flex-wrap items-center justify-between relative md:w-64 z-10 py-2 px-6`}
+        className={`md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-light-400 dark:bg-dark-600 flex flex-wrap items-center justify-between relative md:w-64 z-10 py-2 px-6`}
       >
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
-            className={`cursor-pointer text-light-400 dark:text-dark-800 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent opacity-50 md:hidden `}
+            className={`cursor-pointer text-light-400 dark:text-dark-600 px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent opacity-50 md:hidden `}
             type="button"
             onClick={() =>
-              setCollapseShow(` bg-light-200 dark:bg-dark-600  m-2 py-3 px-6`)
+              setCollapseShow(` bg-light-200 dark:bg-dark-300  m-2 py-3 px-6`)
             }
           >
             <i className="fas fa-bars"></i>
@@ -35,7 +35,7 @@ export const DashboardSidebar = () => {
           <Link href="/app/dashboard">
             <a
               href="#"
-              className={`md:block text-left md:p-2 text-dark-700 dark:text-light-400 hover:text-dark-600 dark:hover:text-light-500 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0`}
+              className={`md:block text-left md:p-2 text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0`}
             >
               {site_name}
             </a>
@@ -60,7 +60,7 @@ export const DashboardSidebar = () => {
                   <Link href="/">
                     <a
                       href="#"
-                      className={`md:block text-left md:p-2 text-dark-700 dark:text-light-400 hover:text-dark-600 dark:hover:text-light-500  mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0`}
+                      className={`md:block text-left md:p-2 text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500  mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0`}
                     >
                       {site_name}
                     </a>
@@ -69,7 +69,7 @@ export const DashboardSidebar = () => {
                 <div className="w-6/12 flex justify-end">
                   <button
                     type="button"
-                    className={`cursor-pointer text-dark-700 dark:text-light-400 hover:text-dark-600 dark:hover:text-light-500  opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent`}
+                    className={`cursor-pointer text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500  opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent`}
                     onClick={() => setCollapseShow("hidden")}
                   >
                     <i className="fas fa-times"></i>
