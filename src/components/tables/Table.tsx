@@ -15,7 +15,7 @@ export const Table: FC<TableProps> = ({
   boxShadow,
 }) => {
   const tableHeadClasses = `align-middle border border-solid border-l-0 border-r-0 whitespace-nowrap font-semibold text-left  text-dark-500 dark:text-light-400 border-dark-500 dark:border-light-300`;
-  const trClasses = `ease-linear transition-all duration-100 hover:bg-light-200 hover:dark:bg-dark-300`;
+  const trClasses = `ease-linear transition-all duration-100 hover:bg-light-200 dark:hover:bg-dark-400`;
   const tdClasses = `border-t-0 align-middle border-l-0 border-r-0 whitespace-nowrap`;
 
   return (
