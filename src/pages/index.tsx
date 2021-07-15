@@ -16,12 +16,14 @@ const Main = () => {
           <p className="leading-normal text-2xl mb-8">
             Just copy and start your project
           </p>
-          <Button href="/app" inverted rounded size="large" classNames="my-6">
-            Dashboard
-          </Button>
-          <Button href="/login" inverted rounded size="large" classNames="my-2">
-            Login
-          </Button>
+          <div className="flex justify-center items-center w-full">
+            <Button href="/app" inverted rounded size="large" classNames="mr-2">
+              Dashboard
+            </Button>
+            <Button href="/login" inverted rounded size="large">
+              Login
+            </Button>
+          </div>
         </div>
 
         <div className="w-full md:w-3/5 py-6 text-center">
