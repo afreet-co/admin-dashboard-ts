@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FC } from "react";
 
@@ -11,12 +12,14 @@ interface ButtonProps {
   outline?: boolean;
   classNames?: string;
   onClick?: () => void;
+  href?: string;
 }
 
 export const Button: FC<ButtonProps> = ({
   children,
   type,
   size,
+  href,
   uppercase,
   rounded,
   outline,
@@ -37,9 +40,6 @@ export const Button: FC<ButtonProps> = ({
     default:
       sizeClasses = "text-xs px-4 py-2 shadow hover:shadow-md";
   }
-  let darkClass = "dark-500";
-  let lightClass = "light-300";
-
   let textClasses = inverted
     ? `text-light-300 dark:text-dark-500`
     : `text-dark-500 dark:text-light-300`;
@@ -86,16 +86,21 @@ export const Button: FC<ButtonProps> = ({
     default:
       contentClasses = `${bgClasses} ${textClasses}`;
   }
+  const finalClasses = `${contentClasses} font-bold rounded focus:ring ring-dark-100 dark:ring-light-400 outline-none focus:outline-none ease-linear transition-all duration-150 ${
+    uppercase ? "uppercase" : ""
+  } ${rounded ? "rounded-full" : ""} ${sizeClasses} ${classNames || ""}`;
 
   return (
-    <button
-      className={`${contentClasses} font-bold rounded focus:ring ring-dark-100 dark:ring-light-400 outline-none focus:outline-none ease-linear transition-all duration-150 ${
-        uppercase ? "uppercase" : ""
-      } ${rounded ? "rounded-full" : ""} ${sizeClasses} ${classNames || ""}`}
-      type={type}
-      onClick={onClick}
-    >
-      {children}
-    </button>
+    <>
+      {href ? (
+        <Link href={href}>
+          <a className={finalClasses}>{children}</a>
+        </Link>
+      ) : (
+        <button className={finalClasses} type={type} onClick={onClick}>
+          {children}
+        </button>
+      )}
+    </>
   );
 };
