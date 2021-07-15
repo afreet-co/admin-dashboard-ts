@@ -1,14 +1,16 @@
+import { Card } from "../../components/cards/Card";
+import { Table } from "../../components/tables/Table";
+import { todos } from "../../data/fake-todos";
 import { DashboardLayout } from "../../layouts/DashboardLayout";
 
 const Index = () => {
   return (
     <DashboardLayout>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-        quisquam perspiciatis asperiores architecto in ducimus quaerat incidunt
-        sequi dolor, dolore atque ratione, quasi praesentium. Similique ipsa
-        minus error dolorum in?
-      </p>
+      <Card title="Todo List">
+        <div className="block w-full overflow-x-auto md:px-8 px-4">
+          <Table rows={todos} columnNames={Object.keys(todos[0])} />
+        </div>
+      </Card>
     </DashboardLayout>
   );
 };

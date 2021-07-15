@@ -6,7 +6,7 @@ import { DashboardLayout } from "../../layouts/DashboardLayout";
 const Buttons = () => {
   return (
     <DashboardLayout>
-      <div className="flex flex-wrap mt-4 space-y-12">
+      <div className="flex flex-wrap space-y-12">
         <Card title="Buttons">
           <div className="px-10 py-4 ">
             <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
