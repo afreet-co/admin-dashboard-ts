@@ -39,33 +39,52 @@ export const Button: FC<ButtonProps> = ({
   }
   let darkClass = "dark-500";
   let lightClass = "light-300";
+
+  let textClasses = inverted
+    ? `text-light-300 dark:text-dark-500`
+    : `text-dark-500 dark:text-light-300`;
+  let bgClasses = inverted
+    ? `bg-dark-500 dark:bg-light-300`
+    : `bg-light-300 dark:bg-dark-500`;
+  let borderClasses = inverted
+    ? `border-light-300 dark:border-dark-500`
+    : `border-dark-500 dark:border-light-300`;
+
   switch (color) {
     case "dark":
-      darkClass = "dark-600";
-      lightClass = "light-400";
+      textClasses = inverted
+        ? `text-light-400 dark:text-dark-600`
+        : `text-dark-600 dark:text-light-400`;
+      bgClasses = inverted
+        ? `bg-dark-600 dark:bg-light-400`
+        : `bg-light-400 dark:bg-dark-600`;
+      borderClasses = inverted
+        ? `border-light-400 dark:border-dark-600`
+        : `border-dark-600 dark:border-light-400`;
       break;
     case "light":
-      darkClass = "dark-300";
-      lightClass = "light-200";
+      textClasses = inverted
+        ? `text-light-200 dark:text-dark-300`
+        : `text-dark-300 dark:text-light-200`;
+      bgClasses = inverted
+        ? `bg-dark-300 dark:bg-light-200`
+        : `bg-light-200 dark:bg-dark-300`;
+      borderClasses = inverted
+        ? `border-light-200 dark:border-dark-300`
+        : `border-dark-300 dark:border-light-200`;
       break;
     case "normal":
     default:
   }
 
-  if (inverted) {
-    const temp = darkClass;
-    darkClass = lightClass;
-    lightClass = temp;
-  }
-
   let contentClasses = "";
   switch (outline) {
     case true:
-      contentClasses = `border-2 border-${darkClass} dark:border-${lightClass} text-${darkClass} dark:text-${lightClass}`;
+      contentClasses = `border-2 ${borderClasses} ${textClasses}`;
       break;
     case false:
     default:
-      contentClasses = `bg-${lightClass} dark:bg-${darkClass} text-${darkClass} dark:text-${lightClass}`;
+      contentClasses = `${bgClasses} ${textClasses}`;
   }
 
   return (
