@@ -10,7 +10,7 @@ interface ButtonProps {
   rounded?: boolean;
   outline?: boolean;
   classNames?: string;
-  onClick?:()=>void;
+  onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -22,7 +22,8 @@ export const Button: FC<ButtonProps> = ({
   outline,
   classNames,
   color,
-  inverted,onClick
+  inverted,
+  onClick,
 }) => {
   let sizeClasses = "";
   switch (size) {
@@ -69,7 +70,7 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${contentClasses} font-bold rounded outline-none focus:outline-none ease-linear transition-all duration-150 ${
+      className={`${contentClasses} font-bold rounded focus:ring ring-dark-300 dark:ring-light-700 outline-none focus:outline-none ease-linear transition-all duration-150 ${
         uppercase ? "uppercase" : ""
       } ${rounded ? "rounded-full" : ""} ${sizeClasses} ${classNames || ""}`}
       type={type}
