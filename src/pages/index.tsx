@@ -17,7 +17,10 @@ const Main = () => {
             Just copy and start your project
           </p>
           <Button href="/app" inverted rounded size="large" classNames="my-6">
-            Subscribe
+            Dashboard
+          </Button>
+          <Button href="/login" inverted rounded size="large" classNames="my-2">
+            Login
           </Button>
         </div>
 
