@@ -9,7 +9,7 @@ const Buttons = () => {
       <div className="flex flex-wrap mt-4 space-y-12">
         <Card title="Buttons">
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Size
             </h4>
             <div className="flex justify-between items-center">
@@ -25,7 +25,7 @@ const Buttons = () => {
             </div>
           </div>
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Color
             </h4>
             <div className="flex justify-between items-center">
@@ -41,7 +41,7 @@ const Buttons = () => {
             </div>
           </div>
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Outline
             </h4>
             <div className="flex justify-around items-center">
@@ -56,7 +56,7 @@ const Buttons = () => {
         </Card>
         <Card title="Inverted Buttons">
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Size
             </h4>
             <div className="flex justify-between items-center">
@@ -73,7 +73,7 @@ const Buttons = () => {
             </div>
           </div>
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Color
             </h4>
             <div className="flex justify-between items-center">
@@ -89,7 +89,7 @@ const Buttons = () => {
             </div>
           </div>
           <div className="px-10 py-4 ">
-            <h4 className="font-semibold mb-4 text-dark-800 dark:text-light-500">
+            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
               Outline
             </h4>
             <div className="flex justify-around items-center">

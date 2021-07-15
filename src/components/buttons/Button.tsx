@@ -37,15 +37,15 @@ export const Button: FC<ButtonProps> = ({
     default:
       sizeClasses = "text-xs px-4 py-2 shadow hover:shadow-md";
   }
-  let darkClass = "dark-700";
+  let darkClass = "dark-500";
   let lightClass = "light-300";
   switch (color) {
     case "dark":
-      darkClass = "dark-800";
+      darkClass = "dark-600";
       lightClass = "light-400";
       break;
     case "light":
-      darkClass = "dark-600";
+      darkClass = "dark-300";
       lightClass = "light-200";
       break;
     case "normal":
@@ -70,7 +70,7 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${contentClasses} font-bold rounded focus:ring ring-dark-300 dark:ring-light-700 outline-none focus:outline-none ease-linear transition-all duration-150 ${
+      className={`${contentClasses} font-bold rounded focus:ring ring-dark-100 dark:ring-light-400 outline-none focus:outline-none ease-linear transition-all duration-150 ${
         uppercase ? "uppercase" : ""
       } ${rounded ? "rounded-full" : ""} ${sizeClasses} ${classNames || ""}`}
       type={type}
