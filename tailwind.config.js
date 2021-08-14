@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Hind Siliguri", ...defaultTheme.fontFamily.sans],
+        sans: ["Recursive", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         light: {
