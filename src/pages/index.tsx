@@ -17,10 +17,10 @@ const Main = () => {
             Just copy and start your project
           </p>
           <div className="flex justify-center items-center w-full">
-            <Button href="/app" inverted rounded size="large" classNames="mr-2">
+            <Button href="/app" rounded size="large" classNames="mr-2">
               Dashboard
             </Button>
-            <Button href="/login" inverted rounded size="large">
+            <Button href="/login" rounded size="large">
               Login
             </Button>
           </div>
