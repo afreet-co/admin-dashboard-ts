@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { createPopper } from "@popperjs/core";
 import { site_name } from "../../configs/strings";
+import { classes } from "../../configs/classnames";
 
 export const UserDropdown = () => {
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -17,12 +18,12 @@ export const UserDropdown = () => {
     setDropdownPopoverShow(false);
   };
 
-  const linkClasses = `text-sm py-2 px-4 font-medium block w-full whitespace-nowrap bg-transparent text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500`;
+  const linkClasses = `text-sm py-2 px-4 font-medium block w-full whitespace-nowrap bg-transparent ${classes.textBase} ${classes.textHover}`;
 
   return (
     <>
       <a
-        className={`text-dark-500 dark:text-light-400 block`}
+        className={`${classes.textBase} block`}
         href="#"
         ref={btnDropdownRef}
         onClick={(e) => {
@@ -32,7 +33,7 @@ export const UserDropdown = () => {
       >
         <div className="items-center flex">
           <span
-            className={`w-8 h-8 text-sm text-dark-500 dark:text-light-400 border-2 uppercase border-light-200 dark:border-dark-300 bg-light-400 dark:bg-dark-600 inline-flex items-center justify-center rounded-full hover:bg-light-300 dark:hover:bg-dark-300`}
+            className={`w-8 h-8 text-sm ${classes.textBase} border-2 uppercase ${classes.border} ${classes.background.dark} inline-flex items-center justify-center rounded-full ${classes.background.hoverBase}`}
           >
             {site_name?.slice(0, 2)}
           </span>
@@ -42,7 +43,7 @@ export const UserDropdown = () => {
         ref={popoverDropdownRef}
         className={
           (dropdownPopoverShow ? "block " : "hidden ") +
-          `bg-light-400 dark:bg-dark-600 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48`
+          `${classes.background.dark} text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48`
         }
       >
         <a href="#" className={linkClasses} onClick={(e) => e.preventDefault()}>

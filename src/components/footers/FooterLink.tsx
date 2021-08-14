@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { classes } from "../../configs/classnames";
 
 // Discriminated Union: If link is set onClick can't be set, and vice versa
 type FooterLinkProps = {
@@ -9,7 +10,7 @@ export const FooterLink: FC<FooterLinkProps> = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
-      className={`text-dark-500 dark:text-light-400 hover:text-dark-300 dark:hover:text-light-500 text-sm font-semibold block py-1 px-3`}
+      className={`${classes.textBase} ${classes.textHover} text-sm font-semibold block py-1 px-3`}
     >
       {children}
     </button>

@@ -5,6 +5,7 @@ import Head from "next/head";
 import { getTitleFromPath } from "../../helpers/strings";
 import { UserDropdown } from "../dropdowns/UserDropdown";
 import { site_name } from "../../configs/strings";
+import { classes } from "../../configs/classnames";
 
 export const DashboardNavbar = () => {
   const router = useRouter();
@@ -19,11 +20,11 @@ export const DashboardNavbar = () => {
       </Head>
       {/* Navbar */}
       <nav
-        className={`md:flex hidden sticky top-0 w-full z-10 bg-light-400 dark:bg-dark-600 shadow md:flex-row md:flex-nowrap md:justify-start  items-center p-2`}
+        className={`md:flex hidden sticky top-0 w-full z-10 ${classes.background.dark} shadow md:flex-row md:flex-nowrap md:justify-start  items-center p-2`}
       >
         <div className="w-full mx-auto items-center flex justify-between md:flex-nowrap flex-wrap px-4">
           <div
-            className={`text-dark-600 dark:text-light-400 text-sm  hidden lg:inline-block  font-semibold`}
+            className={`${classes.textBase} text-sm  hidden lg:inline-block  font-semibold`}
           >
             {navbarTitle}
           </div>
@@ -35,7 +36,7 @@ export const DashboardNavbar = () => {
               <input
                 type="text"
                 placeholder="Search here..."
-                className="border-0 px-3 py-2 placeholder-dark-400 dark:placeholder-light-300 relative bg-light-300 dark:bg-dark-500  rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-8"
+                className={`border-0 px-3 py-2 ${classes.placeholder} relative ${classes.background.base}  rounded text-sm shadow outline-none focus:outline-none focus:ring w-full pl-8`}
               />
             </div>
           </form>

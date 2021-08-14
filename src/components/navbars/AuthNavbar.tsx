@@ -4,6 +4,7 @@ import { site_name } from "../../configs/strings";
 import { useRouter } from "next/router";
 import { getTitleFromPath } from "../../helpers/strings";
 import Head from "next/head";
+import { classes } from "../../configs/classnames";
 
 export const AuthNavbar = () => {
   const router = useRouter();
@@ -20,7 +21,7 @@ export const AuthNavbar = () => {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a
-                className={`text-dark-500 dark:text-light-300  text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase`}
+                className={`${classes.textBase} text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase`}
               >
                 {site_name}
               </a>

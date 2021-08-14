@@ -6,7 +6,7 @@ const Login = () => {
     <AuthLayout>
       <div className="w-full lg:w-4/12 px-4">
         <div
-          className={`relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-light-200 dark:bg-dark-300  border-0`}
+          className={`relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-light-400 dark:bg-dark-600  border-0`}
         >
           <div className="mb-0 p-6">
             <div
