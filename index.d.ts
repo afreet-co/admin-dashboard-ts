@@ -3,6 +3,7 @@ declare namespace NodeJS {
     NEXT_PUBLIC_DESCRIPTION: string;
     NEXT_PUBLIC_APP_NAME: string;
     NEXT_PUBLIC_COMPANY_NAME: string;
+    NEXT_PUBLIC_COMPANY_LINK: string;
     NEXT_PUBLIC_SITE_PREFIX: string;
   }
 }

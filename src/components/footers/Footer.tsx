@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { FC } from "react";
 import { classes } from "../../configs/classnames";
-import { company_name } from "../../configs/strings";
+import { company_link, company_name } from "../../configs/strings";
 import { useToggleTheme } from "../../hooks/useToggleTheme";
 import { FooterLink } from "./FooterLink";
 
@@ -31,7 +31,11 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
             <div className="w-full md:w-8/12 px-4 mt-2 md:mt-0">
               <ul className="flex flex-wrap list-none md:justify-end justify-center">
                 <li>
-                  <FooterLink>{company_name}</FooterLink>
+                  <FooterLink
+                    onClick={() => window.open(company_link, "_blank")}
+                  >
+                    {company_name}
+                  </FooterLink>
                 </li>
                 <li>
                   <FooterLink
