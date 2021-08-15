@@ -10,7 +10,7 @@ const Buttons = () => {
   return (
     <DashboardLayout>
       <Heading title="Buttons" />
-      <div className="flex space-x-4">
+      <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0">
         <Card width="half">
           <div className="space-y-4">
             <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
@@ -47,7 +47,7 @@ const Buttons = () => {
         </Card>
       </div>
 
-      <div className="flex space-x-4">
+      <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0">
         <Card width="half">
           <div className="space-y-4">
             <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">

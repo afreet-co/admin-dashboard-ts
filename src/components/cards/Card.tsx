@@ -8,8 +8,8 @@ interface CardProps {
 }
 const widthClasses: { [key in CardSizes]: string } = {
   full: "w-full",
-  half: "w-1/2",
-  third: "w-1/3",
+  half: "w-full sm:w-1/2",
+  third: "w-full sm:w-1/3",
 };
 
 export const Card: FC<CardProps> = ({ width, children }) => {

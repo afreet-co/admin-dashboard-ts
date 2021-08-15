@@ -9,7 +9,7 @@ export const AuthLayout: FC = ({ children }) => {
       className={`w-screen h-screen ${classes.background.base} bg-no-repeat bg-full overflow-auto`}
     >
       <AuthNavbar />
-      <div className="min-h-full w-full space-y-4 mx-auto px-10 py-5">
+      <div className="min-h-full w-full space-y-4 mx-auto px-6 sm:px-10 py-5">
         {children}
       </div>
       <Footer isAuthLayout={true} />

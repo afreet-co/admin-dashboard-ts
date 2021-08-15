@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <AuthLayout>
       <div className="flex justify-center items-start ">
-        <div className="w-full lg:w-4/12 px-4">
+        <div className="w-full sm:w-4/12">
           <div
             className={`relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg ${classes.background.dark}  border-0`}
           >

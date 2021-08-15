@@ -55,7 +55,7 @@ export const DashboardSidebar = () => {
             <div className="md:min-w-full md:hidden block mb-4">
               <div className="flex flex-wrap">
                 <div className="w-6/12">
-                  <Link href="/">
+                  <Link href="/app/dashboard">
                     <a
                       href="#"
                       className={`md:block text-left md:p-2 ${classes.textBase} ${classes.textHover}  mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0`}
