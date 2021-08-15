@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { classes } from "../../configs/classnames";
 
 export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
   return (
@@ -11,7 +12,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
       <path
         transform="translate(-11.5 -150.75)"
         d="M274.63,501l-6.29-3.91c-.6-.37-1.19-.77-1.79-1.15a59.86,59.86,0,0,0,6.05-116.62l.31,24.66-13.55-26.83h-.17a59.87,59.87,0,0,0-62.58,57c-.06,1.15,0,2.27,0,3.4-4.71-5.38-9-11.15-11.83-17.47-5.73-12.79-5.84-27.28-5.39-44.9.9-34.9,2.41-70.08,4.37-105.14a59.85,59.85,0,0,0,53.16-56.64c.08-1.83,0-3.63,0-5.43,0-.45,0-.89-.07-1.34-.12-1.74-.28-3.46-.55-5.16,0-.28-.1-.55-.15-.82-.24-1.44-.54-2.86-.88-4.26-.13-.53-.26-1-.4-1.57-.42-1.53-.88-3-1.42-4.52-.18-.49-.39-1-.58-1.46-.42-1.09-.88-2.17-1.37-3.23-.26-.56-.51-1.12-.78-1.67-.08-.14-.13-.29-.21-.43l0,0a59.84,59.84,0,0,0-70.28-30.36l.4,32.1-13.4-26.52a59.57,59.57,0,0,0-28.55,64.51h-.06c.09.43.22.84.32,1.26.19.79.39,1.57.61,2.35.28,1,.6,2,.93,3,.25.74.49,1.47.77,2.2.41,1.06.87,2.09,1.33,3.12.27.6.51,1.22.8,1.81q1.14,2.33,2.48,4.53c.31.52.66,1,1,1.51.64,1,1.28,2,2,2.93.43.59.89,1.16,1.34,1.73.66.83,1.33,1.65,2,2.44.49.57,1,1.12,1.51,1.66.74.78,1.49,1.53,2.27,2.26.52.49,1,1,1.57,1.46.88.79,1.8,1.53,2.73,2.26.47.37.93.75,1.41,1.11,1.42,1,2.88,2,4.39,3,.28.17.59.31.87.48,1.27.74,2.55,1.45,3.87,2.09.57.28,1.15.53,1.73.79,1.08.48,2.17.95,3.29,1.38l2,.7c1.1.37,2.22.72,3.35,1,.66.18,1.33.37,2,.53,1.22.29,2.47.53,3.73.75l.24.05q-1.23,22.19-2.2,44.39a59.83,59.83,0,0,0-83.07-26l10.58,29-21.77-20.9a59.66,59.66,0,0,0-19.34,41.34A58.5,58.5,0,0,0,52.8,354a59.84,59.84,0,0,0,110.06,16.3c0,1.5-.1,3-.14,4.51-.4,15.54-.9,34.88,6.85,52.15,5.25,11.7,13.69,21.21,22,29.73,5.43,5.54,11.06,10.91,16.83,16.1a60.09,60.09,0,0,0,21.62,18c9.48,7.3,19.3,14.17,29.45,20.51l6.34,3.94c5.7,3.53,11.54,7.16,17.26,10.93-1-.1-2-.21-3-.26a59.89,59.89,0,0,0-58.94,39l37.4,30.43-41.14-9.54a59.89,59.89,0,0,0,85.82,53.92l-2.78,3.45q-2.76,3.43-5.45,6.82c-24.34,30.83-31.11,60.09-19.06,82.4l14.66-7.91c-11.73-21.72,5.91-49.52,17.47-64.16q2.64-3.33,5.36-6.7c15.55-19.32,33.17-41.22,32.74-68.08C345.52,545,306.21,520.6,274.63,501Z"
-        className="fill-current text-dark-500 dark:text-light-300"
+        className={`fill-current ${classes.textBase}`}
       />
       <ellipse cx="588.5" cy="577.5" rx="588.5" ry="21" fill="#3f3d56" />
       <path
@@ -25,22 +26,22 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
       <path
         transform="translate(-11.5 -150.75)"
         d="M81,599.39a14,14,0,0,1,7-11.5l3.14,6.22-.1-7.53a14.22,14.22,0,0,1,4.63-.56A14,14,0,1,1,81,599.39Z"
-        fill="#57b894"
+        fill="#2d745a"
       />
       <path
         transform="translate(-11.5 -150.75)"
         d="M106,694.38a14,14,0,1,0-.68-11.3l8.77,7.13L104.46,688A14,14,0,0,0,106,694.38Z"
-        fill="#57b894"
+        fill="#2d745a"
       />
       <path
         transform="translate(-11.5 -150.75)"
         d="M113,667.13a14,14,0,0,0,4.45-27.53l.08,5.78-3.18-6.29h0a14,14,0,0,0-14.67,13.36,13.84,13.84,0,0,0,.6,4.79A14,14,0,0,0,113,667.13Z"
-        fill="#57b894"
+        fill="#2d745a"
       />
       <path
         transform="translate(-11.5 -150.75)"
         d="M78.88,644.46a14,14,0,1,0-6.21-26.27l2.48,6.8-5.1-4.9a14,14,0,0,0-4.53,9.69,13.79,13.79,0,0,0,.35,3.87A14,14,0,0,0,78.88,644.46Z"
-        fill="#57b894"
+        fill="#2d745a"
       />
       <path
         transform="translate(-11.5 -150.75)"
@@ -78,7 +79,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         width="834"
         height="456"
         rx="20.42"
-        className="fill-current text-dark-500 dark:text-light-300"
+        className={`fill-current ${classes.textBase}`}
       />
       <path
         d="m172 133.75h268v434h-247.58a20.42 20.42 0 0 1 -20.42 -20.42v-413.58z"
@@ -96,7 +97,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="M387.5,490A66.5,66.5,0,1,1,321,423.5,66.47,66.47,0,0,1,387.5,490Z"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeMiterlimit="10"
         strokeWidth="4"
       />
@@ -104,7 +105,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="M325.38,467.23l8.3,13,35.53,55.59a66.5,66.5,0,0,1-103.32-8.57l43.54-84.94.91,1.43"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="4"
@@ -113,7 +114,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="M385.31,507a66.46,66.46,0,0,1-16.1,28.82l-35.53-55.59,15.69-24.78a.66.66,0,0,1,1.1,0C353.76,460.32,371,486,385.31,507Z"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeMiterlimit="10"
         strokeWidth="4"
       />
@@ -121,7 +122,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="M337.5,452.5a15,15,0,0,1-12.12,14.73l-15-23.51a15,15,0,0,1,27.16,8.78Z"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeMiterlimit="10"
         strokeWidth="4"
       />
@@ -129,7 +130,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="m347.5 481.5"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeMiterlimit="10"
         strokeWidth="4"
       />
@@ -137,7 +138,7 @@ export const HomeHeroImage: FC<{ classNames: string }> = ({ classNames }) => {
         transform="translate(-11.5 -150.75)"
         d="m333.5 480.5"
         fill="none"
-        className="stroke-current text-dark-500 dark:text-light-300"
+        className={`stroke-current ${classes.textBase}`}
         strokeMiterlimit="10"
         strokeWidth="4"
       />

@@ -11,9 +11,7 @@ export const Footer: FC<{ isAuthLayout: boolean }> = ({ isAuthLayout }) => {
   return (
     <>
       <footer
-        className={`sticky ${
-          isAuthLayout ? "" : classes.background.dark
-        } bottom-0 block py-2`}
+        className={`sticky ${classes.background.dark} bottom-0 block py-2`}
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center md:justify-between justify-center">

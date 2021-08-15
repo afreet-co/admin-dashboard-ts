@@ -9,7 +9,7 @@ const Index = () => {
     <DashboardLayout>
       <Heading title="Todo List" />
       <Card>
-        <div className="block w-full overflow-x-auto p-4">
+        <div className="block w-full overflow-x-auto">
           <Table rows={todos} columnNames={Object.keys(todos[0])} />
         </div>
       </Card>

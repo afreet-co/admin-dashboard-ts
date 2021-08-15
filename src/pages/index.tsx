@@ -5,7 +5,7 @@ import { Button } from "../components/buttons/Button";
 const Main = () => {
   return (
     <AuthLayout>
-      <div className="px-10 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <div className="mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p className="uppercase tracking-loose w-full">
             Need a simple admin dashboard starter template without hustle?
@@ -17,10 +17,16 @@ const Main = () => {
             Just copy and start your project
           </p>
           <div className="flex justify-center items-center w-full">
-            <Button href="/app" rounded size="large" classNames="mr-2">
+            <Button
+              href="/app"
+              rounded
+              size="large"
+              color="normal"
+              classNames="mr-2"
+            >
               Dashboard
             </Button>
-            <Button href="/login" rounded size="large">
+            <Button href="/login" rounded color="normal" size="large">
               Login
             </Button>
           </div>

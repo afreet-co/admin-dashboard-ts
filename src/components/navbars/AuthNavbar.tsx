@@ -16,7 +16,9 @@ export const AuthNavbar = () => {
           {navbarTitle} | {site_name}
         </title>
       </Head>
-      <nav className="sticky top-0 w-full z-10 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <nav
+        className={`sticky top-0 w-full z-10 ${classes.background.dark} flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg`}
+      >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">

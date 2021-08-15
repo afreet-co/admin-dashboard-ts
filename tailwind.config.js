@@ -1,4 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+
+const withOpacity =
+  (rgbValue) =>
+  ({ opacityValue }) =>
+    opacityValue !== undefined
+      ? `rgba(${rgbValue},${opacityValue})`
+      : `rgb(${rgbValue})`;
+
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -22,34 +30,40 @@ module.exports = {
       },
       colors: {
         light: {
-          DEFAULT: "#8892B0",
-          50: "#E9EAF0",
-          100: "#DEE1E9",
-          200: "#C8CDDB",
-          300: "#B3B9CC", //light
-          400: "#9DA6BE",
-          500: "#8892B0", //base
-          600: "#69769C", //dark
-          700: "#545E7E",
-          800: "#3F4760",
-          900: "#2B3141",
+          DEFAULT: withOpacity("136,146,176"),
+          50: withOpacity("233,234,240"),
+          100: withOpacity("222,225,233"),
+          200: withOpacity("200,205,219"),
+          300: withOpacity("179,185,204"), //light
+          400: withOpacity("157,166,190"),
+          500: withOpacity("136,146,176"), //base
+          600: withOpacity("105,118,156"), //dark
+          700: withOpacity("84,94,126"),
+          800: withOpacity("63,71,96"),
+          900: withOpacity("43,49,65"),
         },
         dark: {
-          DEFAULT: "#0A192F",
-          50: "#5A8EDC",
-          100: "#437FD7",
-          200: "#2863BA",
-          300: "#1E4A8C", //light
-          400: "#14325D",
-          500: "#0A192F", //base
-          600: "#071222",
-          700: "#050C16", //dark
-          800: "#020509",
-          900: "#000000",
+          DEFAULT: withOpacity("10,25,47"),
+          50: withOpacity("90,142,220"),
+          100: withOpacity("67,127,215"),
+          200: withOpacity("40,99,186"),
+          300: withOpacity("30,74,140"), //light
+          400: withOpacity("20,50,93"),
+          500: withOpacity("10,25,47"), //base
+          600: withOpacity("7,18,34"),
+          700: withOpacity("5,12,22"), //dark
+          800: withOpacity("2,5,9"),
+          900: withOpacity("0,0,0"),
         },
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ["checked"],
+      borderColor: ["checked"],
+      inset: ["checked"],
+    },
+  },
   plugins: [],
 };
