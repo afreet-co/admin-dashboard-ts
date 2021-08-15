@@ -13,10 +13,8 @@ const Buttons = () => {
       <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0">
         <Card width="half">
           <div className="space-y-4">
-            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
-              Size
-            </h4>
-            <div className="flex justify-between items-center">
+            <h4 className={`font-semibold mb-4 ${classes.textBase}`}>Size</h4>
+            <div className="flex flex-col items-center justify-between space-y-2 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center ">
               <Button size="small" type="button">
                 Small
               </Button>
@@ -30,10 +28,8 @@ const Buttons = () => {
           </div>
         </Card>
         <Card width="half">
-          <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
-            Color
-          </h4>
-          <div className="flex justify-between items-center">
+          <h4 className={`font-semibold mb-4 ${classes.textBase}`}>Color</h4>
+          <div className="flex flex-col items-center justify-between space-y-2 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center ">
             <Button size="regular" color="light" type="button">
               Light
             </Button>
@@ -50,10 +46,8 @@ const Buttons = () => {
       <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0">
         <Card width="half">
           <div className="space-y-4">
-            <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
-              Icon
-            </h4>
-            <div className="flex justify-between items-center">
+            <h4 className={`font-semibold mb-4 ${classes.textBase}`}>Icon</h4>
+            <div className="flex flex-col items-center justify-between space-y-2 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center ">
               <Button size="small" type="button">
                 <i className={`fas fa-asterisk`}></i> Small
               </Button>
@@ -67,10 +61,8 @@ const Buttons = () => {
           </div>
         </Card>
         <Card width="half">
-          <h4 className="font-semibold mb-4 text-dark-600 dark:text-light-500">
-            Spinner
-          </h4>
-          <div className="flex justify-between items-center">
+          <h4 className={`font-semibold mb-4 ${classes.textBase}`}>Spinner</h4>
+          <div className="flex flex-col items-center justify-between space-y-2 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center ">
             <Button
               size="regular"
               color="light"
