@@ -4,6 +4,13 @@
   "author": {
     "name": "Afreet Co"
   },
+  "bin":{
+    "create-admin-dashboard":"runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afreet-co/admin-dashboard-ts.git"
+  },
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
