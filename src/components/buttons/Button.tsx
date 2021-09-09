@@ -12,6 +12,7 @@ interface ButtonProps {
   classNames?: string;
   onClick?: () => void;
   href?: string;
+  disabled?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -24,6 +25,7 @@ export const Button: FC<ButtonProps> = ({
   classNames,
   color,
   onClick,
+  disabled,
 }) => {
   let sizeClasses = "";
   switch (size) {
@@ -49,9 +51,13 @@ export const Button: FC<ButtonProps> = ({
     default:
   }
 
+  const disabledClasses = disabled
+    ? "disabled:opacity-50 disabled:cursor-not-allowed"
+    : "";
+
   const finalClasses = `${bgClasses} ${
     classes.textBaseInverted
-  } box-border font-bold rounded focus:ring ring-dark-100 dark:ring-light-400 block outline-none focus:outline-none ease-linear transition-all duration-150 ${
+  } ${disabledClasses} box-border font-bold rounded focus:ring ring-dark-100 dark:ring-light-400 block outline-none focus:outline-none ease-linear transition-all duration-150 ${
     uppercase ? "uppercase" : ""
   } ${rounded ? "rounded-full" : ""} ${sizeClasses} ${classNames || ""}`;
 
