@@ -15,6 +15,12 @@ export const sidebarRoutes: Route[] = [
         path: "/app/buttons",
         text: "Buttons",
       },
+      {
+        iconClass: "fas fa-table",
+        orderNo: 3,
+        path: "/app/paginated-table",
+        text: "Paginated Table",
+      },
     ],
   },
   {
