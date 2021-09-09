@@ -68,7 +68,12 @@ export const Button: FC<ButtonProps> = ({
           <a className={finalClasses}>{children}</a>
         </Link>
       ) : (
-        <button className={finalClasses} type={type} onClick={onClick}>
+        <button
+          className={finalClasses}
+          type={type}
+          onClick={onClick}
+          disabled={disabled}
+        >
           {children}
         </button>
       )}
